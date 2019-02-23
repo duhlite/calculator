@@ -1,7 +1,8 @@
 import {ADD_NUM} from '../constants/index';
+import {CLEAR} from '../constants/index';
 
 const initialState = {
-    display: ''
+    display: [0]
 }
 
 function rootReducer(state = initialState, action) {
@@ -10,6 +11,12 @@ function rootReducer(state = initialState, action) {
             return {
                 ...state,
                 display: state.display.concat(action.payload)
+            }
+        }
+        case CLEAR: {
+            return {
+                ...state,
+                display: [0]
             }
         }
             

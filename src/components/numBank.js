@@ -28,4 +28,18 @@ export const numBank = [{
 }, {
     id: 'nine',
     num: 9
-}]
+}];
+
+export const funcBank = [{
+    id: 'add',
+    sym: '+'
+}, {
+    id: 'subtract',
+    sym: '-'
+}, {
+    id: 'multiply',
+    sym: '*'
+}, {
+    id: 'divide',
+    sym: '/'
+}];
