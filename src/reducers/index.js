@@ -1,5 +1,4 @@
-import {ADD_NUM, FUNC_ACTION} from '../constants/index';
-import {CLEAR} from '../constants/index';
+import {ADD_NUM, FUNC_ACTION, EQUAL, CLEAR} from '../constants/index';
 
 const initialState = {
     display: '0',
@@ -34,7 +33,14 @@ function rootReducer(state = initialState, action) {
                 currentValue: ''
             }
         }
-            
+        case EQUAL: {
+            return {
+                ...state,
+                display: action.payload,
+                currentValue: action.payload,
+                previousValue: ''
+            }
+        }    
     
         default:
             return state;
