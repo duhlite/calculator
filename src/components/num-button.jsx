@@ -18,7 +18,8 @@ class ConnectedNumButton extends Component {
 
     render() {
         return (
-            <button className='calc-button' onClick={this.handleClick}>
+            <button className='calc-button'
+            id={this.props.id} onClick={this.handleClick}>
             {this.props.num}
             </button>
         )

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {funcBank} from './numBank';
 import FuncButton from './func-button';
+import EqualButton from './equalbutton';
 
 class FunctionButtons extends Component {
     render() {
@@ -16,6 +17,7 @@ class FunctionButtons extends Component {
         return(
             <div>
                 {funcPad}
+                <EqualButton />
             </div>
         )
     }

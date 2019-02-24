@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 const mapStateToProps = state => {
-    return {display: state.display.join(' ')}
+    return {display: state.display}
 }
 
 class ConnectedDisplay extends Component {
     render() {
         return (
-            <div>
+            <div id='display'>
                 {this.props.display}
             </div>
         )

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {addNum} from '../actions/index';
+import {funcAction} from '../actions/index';
 
 function mapDispatchToProps(dispatch) {
     return {
-        addNum: add => dispatch(addNum(add))
+        funcAction: add => dispatch(funcAction(add))
     }
 }
 
@@ -12,12 +12,13 @@ class ConnectedFuncButton extends Component {
 
     handleClick = () => {
         const add = this.props.sym;
-        this.props.addNum(add);
+        this.props.funcAction(add);
     }
 
     render() {
         return (
-            <button className='calc-button' onClick={this.handleClick}>
+            <button className='calc-button' onClick={this.handleClick}
+            id={this.props.id}>
                 {this.props.sym}
             </button>
         )
