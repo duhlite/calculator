@@ -5,3 +5,5 @@ export const CLEAR = 'CLEAR';
 export const FUNC_ACTION = "FUNC_ACTION";
 
 export const EQUAL = "EQUAL";
+
+export const DECIMAL = 'DECIMAL';

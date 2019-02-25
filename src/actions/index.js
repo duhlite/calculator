@@ -1,4 +1,4 @@
-import {ADD_NUM, FUNC_ACTION, EQUAL} from '../constants/index';
+import {ADD_NUM, FUNC_ACTION, EQUAL,DECIMAL} from '../constants/index';
 import {CLEAR} from '../constants/index';
 
 export function addNum(payload) {
@@ -15,4 +15,8 @@ export function funcAction(payload) {
 
 export function equalEquation(payload) {
     return {type: EQUAL, payload}
+};
+
+export function decimalAdd(payload) {
+    return {type: DECIMAL, payload}
 };

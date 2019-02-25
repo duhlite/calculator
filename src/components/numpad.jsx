@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {numBank} from './numBank';
 import NumButton from './num-button';
+import DecimalButton from './decimal-button';
 
 
 class Numpad extends Component {
@@ -18,6 +19,7 @@ class Numpad extends Component {
         return (
             <div className='numpad'>
                 {numPad}
+                <DecimalButton />
             </div>
         )
     }
